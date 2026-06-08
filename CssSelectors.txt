@@ -1,0 +1,31 @@
+CSS selectors
+
+finding elements using attributes
+finding elements using index
+
+# using reltions
+finding elements using parents
+finding elements using child
+finding elements using siblings
+finding elements by creating long reltions
+
+finding by Visual reltions : like it is my home is beside the Allu Arjun house in jublli hills
+
+
+self : 90% we will use this, Real relations:5-6% , Visual relations: 2%, blind index :2%
+self : using attributes
+Real Relations : parent > child 
+Absolute CSS  path : it referes the immediate child . i.e(html > body > h1....etc)
+
+visual relations given by playwright not CSS selectors
+playwright enhanced CSS and added some more features
+
+// playwright
+ getbyRole loactors
+ getbytext
+ page.getbyTitle("python tutorial" note i.e.. in w3c webiste.).click
+
+
+
+ indentification : use the information provided by dev
+ if dev follows UI and Accessibility standards , it will be the easy for the test automation.

@@ -1,0 +1,10 @@
+{
+    "toolName": "Playwright",
+    "toolVersion": "1.30.0",
+    "isOpenSource": true,
+    "Languagessupported": ["JavaScript", "TypeScript"],
+    "company": {
+    "name":"Microsoft",
+    "founded": 1975
+}
+}

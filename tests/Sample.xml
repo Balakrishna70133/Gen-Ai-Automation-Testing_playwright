@@ -1,0 +1,14 @@
+<testing>
+    <testcase name="TestCase1">
+        <input>5</input>
+        <expected>25</expected>
+    </testcase>
+    <testcase name="TestCase2">
+        <input>10</input>
+        <expected>100</expected>
+    </testcase>
+    <testcase name="TestCase3">
+        <input>0</input>
+        <expected>0</expected>
+    </testcase>
+    </testing>

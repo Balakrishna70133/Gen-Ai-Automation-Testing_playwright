@@ -1,0 +1,51 @@
+{
+    "servers":{
+        "microsoft/playwright-mcp":{
+            "type": "stdio",
+            "command":"npx",
+            "args":[
+                "@playwright/mcp@latest"
+        ],
+        "gallery":"https://api.mcp.github.com",
+        "version":"0.0.1-seed"
+
+        }    
+    },
+    "inputs":[]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// {
+// 	"mcpVersion": "1.0",
+// 	"project": "Testing Class",
+// 	"description": "Workspace MCP configuration created by the assistant. Customize as needed.",
+// 	"createdAt": "2026-05-31T00:00:00Z",
+// 	"prompts": [
+// 		{
+// 			"name": "assistant_instruction",
+// 			"role": "system",
+// 			"content": "You are a helpful coding assistant for this project. Keep responses concise and provide code changes when asked."
+// 		}
+// 	],
+// 	"notes": {
+// 		"howToUse": "Edit 'prompts' to customize assistant behavior. Remove or replace this file if you don't need it."
+// 	}
+// }
