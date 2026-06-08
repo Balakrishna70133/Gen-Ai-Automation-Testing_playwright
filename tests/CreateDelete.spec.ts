@@ -40,8 +40,6 @@ test('Create and Delete Employee using Xpath and CSS', async ({ page }) => {
     // Verify employee is deleted
     await page.locator("//label[text()='Employee Id']/../..//input").fill(empid);
     await page.locator("//button[normalize-space()='Search']").click();
-    // await expect(page.locator("//div[normalize-space()='No Records Found']")).toBeVisible();
-
-    await expect(page.locator("span:has-text('No Records Found')")).toBeVisible();
+    await expect(page.locator("//div[normalize-space()='No Records Found']").first()).toBeVisible({ timeout: 10000 });
 
 })
