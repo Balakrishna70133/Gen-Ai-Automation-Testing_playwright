@@ -2,7 +2,7 @@
 import { expect, Page } from "@playwright/test";
 import { BasePage } from "./basepage";
     
-    class DashboardPage extends BasePage{
+   class DashboardPage extends BasePage{
     dashboardHeader;
     lnkPIM;
     constructor(page:Page){
