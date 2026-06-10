@@ -35,7 +35,7 @@ export default defineConfig({
     baseURL: 'https://vibetestq-osondemand.orangehrm.com/',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
-    headless: false,
+    headless: process.env.CI ? true : false,
   },
   
   /* Configure projects for major browsers. See https://playwright.dev/docs/api/class-testproject. */
