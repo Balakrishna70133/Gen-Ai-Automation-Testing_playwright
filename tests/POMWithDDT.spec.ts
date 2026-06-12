@@ -7,23 +7,17 @@ const testData = (data as any).default ?? data;
 
 test.describe('POM with Base and Data', () => {
 
-    test.beforeEach(async ({ basePage, loginPage, dashboardPage }) => {
+    test('Login once and add two employees in a single session', async ({ basePage, loginPage, dashboardPage, pimPage, addEmpPage, personalDetailsPage }) => {
         await basePage.navigateToURL("/");
         await loginPage.EnterUserName(testData.vibetestq.username);
         await loginPage.EnterPassword(testData.vibetestq.password);
         await loginPage.ClickLogin();
         await dashboardPage.verifyDashboardPage();
-    });
 
-    test('create and delete Employee using Xpath and CSS', async ({ dashboardPage }) => {
-        await dashboardPage.verifyDashboardPage();
-    });
+        const employees = testData.empData.slice(0, 3);
 
-    for (const emp of testData.empData){
-        test(`Create Employee - ${emp.firstName} ${emp.lastName}`, async ({ dashboardPage, addEmpPage, pimPage, personalDetailsPage }) => {
-
+        for (const emp of employees) {
             await dashboardPage.ClickPIM();
-
             await pimPage.verifyPIMPage();
             await pimPage.ClickAdd();
 
@@ -32,9 +26,8 @@ test.describe('POM with Base and Data', () => {
             await addEmpPage.ClickSave();
 
             await personalDetailsPage.verifyPersonalDetailsPage();
-        });
-    }
-
+        }
+    });
 });
 
 

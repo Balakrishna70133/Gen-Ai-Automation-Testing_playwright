@@ -28,13 +28,24 @@ export default defineConfig({
   
     /* Reporter to use on CI. See https://playwright.dev/docs/test-reporters */
   /* Reporter to use on CI. See https://playwright.dev/docs/test-reporters */
-   reporter:  [['html', {outputFolder: 'my-report'}], ['allure-playwright']],
+
+
+  //  reporter:  [['html', {outputFolder: 'my-report'}], ['allure-playwright']],
+
+  reporter: [['html', { outputFolder: "playwright-report" }],
+['allure-playwright', { outputFolder: 'allure-results', detail: true, suiteTitle: true }],],
+
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto("/")`. */
     baseURL: 'https://vibetestq-osondemand.orangehrm.com/',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on',
+
+
+    // trace: 'on',
+     trace: 'on-first-retry',
+    actionTimeout: 10000,
+    navigationTimeout: 60000,
     headless: process.env.CI ? true : false,
   },
   
@@ -47,6 +58,7 @@ export default defineConfig({
         baseURL: 'https://vibetestq-osondemand.orangehrm.com/',
         ...devices['Desktop Chrome'],
       },
+
       // grep: "@ind", // to run tests with @ind tag
       // testMatch: 'POMTestSerialMode.spec.ts'
       // testMatch: 'POMWithDDT.spec.ts'

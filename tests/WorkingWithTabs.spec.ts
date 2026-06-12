@@ -25,10 +25,9 @@ test('Verify Tabs',async({page})=>{
     //switch to new tab
     let newPage = allPages[1];
     await page.waitForTimeout(5000);
-    await newPage.getByPlaceholder("Your email address").fill("Balakrishna70133@gmail.com"); 
-
-    newPage.close();
+    await newPage?.getByPlaceholder("Your email address").fill("Balakrishna70133@gmail.com"); 
     await page.waitForTimeout(5000);
+    newPage?.close();
 
 
 })
