@@ -57,11 +57,14 @@ export default defineConfig({
       use: {
         baseURL: 'https://vibetestq-osondemand.orangehrm.com/',
         ...devices['Desktop Chrome'],
+
+        
       },
 
       // grep: "@ind", // to run tests with @ind tag
       // testMatch: 'POMTestSerialMode.spec.ts'
       // testMatch: 'POMWithDDT.spec.ts'
+      testMatch:'CreateDelete.spec.ts'
  } ],
 });
 

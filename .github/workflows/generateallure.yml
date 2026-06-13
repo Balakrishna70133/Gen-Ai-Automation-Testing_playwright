@@ -42,7 +42,7 @@ jobs:
     # ─── Run tests ───────────────────────────────────────────────────────────
 
     - name: Run Playwright tests
-      run: npx playwright test tests/Locators.spec.ts --project=vibetestq
+      run: npx playwright test --project=vibetestq
       env:
         CI: true
       continue-on-error: true  # Publish report even when tests fail
