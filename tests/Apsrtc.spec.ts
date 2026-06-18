@@ -38,12 +38,13 @@ test('Verify APSRTC website',async({page})=>{
     // await page.locator("input[id='txtJourneyDate']").fill("30/05/2026");
     // await page.keyboard.press("Escape");
     await page.click("input[id='txtJourneyDate']");
-    await page.locator("(//a[text()='15'])[1]").click();
+    await page.locator("(//a[text()='19'])[1]").click();
     await page.waitForTimeout(5000);
     await page.click("input[id='searchBtn']");
     await expect(page.getByText("Book ticket in advance")).toBeVisible();
     await page.locator("//span[text()='Bus Type']").click();
     await page.locator("//span[normalize-space()='A/C CLASS']").click();
+    await page.waitForTimeout(5000);
 
     let acServices = await page.locator("div.srvceNO:visible").all();
 
