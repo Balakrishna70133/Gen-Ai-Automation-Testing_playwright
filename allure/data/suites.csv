@@ -1,4 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","12122","Verify APSRTC website","vibetestq","2026-06-18","passed","2026-06-18","","Apsrtc.spec.ts","",""
-"","8808","Add Employee","vibetestq","2026-06-18","passed","2026-06-18","OrangeHRM End to End","POMTestSerialMode.spec.ts","",""
-"","4980","Login Test","vibetestq","2026-06-18","passed","2026-06-18","OrangeHRM End to End","POMTestSerialMode.spec.ts","",""
+"","13607","Verify APSRTC website","vibetestq","2026-06-18","passed","2026-06-18","","Apsrtc.spec.ts","",""
+"","4519","Login Test","vibetestq","2026-06-18","passed","2026-06-18","OrangeHRM End to End","POMTestSerialMode.spec.ts","",""
+"","7817","Add Employee","vibetestq","2026-06-18","passed","2026-06-18","OrangeHRM End to End","POMTestSerialMode.spec.ts","",""
