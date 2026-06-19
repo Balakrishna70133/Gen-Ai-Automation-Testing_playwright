@@ -50,6 +50,14 @@ outputDir: `${runOutputDir}/artifacts`,
 
     // trace: 'on',
      trace: 'on-first-retry',
+       // Enable full trace recording
+  // trace: 'on',
+
+  // Capture screenshots
+  screenshot: 'on',
+
+  // Record video
+  video: 'on',
     actionTimeout: 10000,
     navigationTimeout: 60000,
     headless: process.env.CI ? true : false,
@@ -64,12 +72,17 @@ outputDir: `${runOutputDir}/artifacts`,
         baseURL: 'https://vibetestq-osondemand.orangehrm.com/',
         ...devices['Desktop Chrome'],
 
-        
+
+        // Slow down execution so you can watch actions
+      launchOptions: {
+        slowMo: 1000,
+
+      },
       },
 
       // grep: "@ind", // to run tests with @ind tag
       // testMatch: 'POMTestSerialMode.spec.ts', 
-      testMatch: ['*POMTestSerialMode.spec.ts', '*Apsrtc.spec.ts']
+      // testMatch: ['*POMTestSerialMode.spec.ts', '*Apsrtc.spec.ts']
       // testMatch:'CreateDelete.spec.ts'
  } ],
 });

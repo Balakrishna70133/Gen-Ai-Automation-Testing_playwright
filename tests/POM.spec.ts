@@ -16,7 +16,7 @@ test('Create and Delete Employee using Xpath and CSS', async ({ page }) => {
 
     // Navigate to Application
 
-    basepage.navigateToURL("https://vibetestq-osondemand.orangehrm.com/auth/login");
+    await basepage.navigateToURL("https://vibetestq-osondemand.orangehrm.com/auth/login");
 
     // await page.goto("https://vibetestq-osondemand.orangehrm.com/auth/login");
 

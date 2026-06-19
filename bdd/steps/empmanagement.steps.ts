@@ -23,7 +23,7 @@ When('I login with valid credentials {string} and {string}', async function (use
 
   // Submit the login form and wait for navigation
   await Promise.all([
-    page.waitForNavigation({ waitUntil: 'networkidle' }),
+    // page.waitForNavigation({ waitUntil: 'networkidle' }),
     page.locator("//button[@type='submit']").click(),
   ]);
 
