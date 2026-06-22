@@ -10,16 +10,24 @@
         "name": "End to End flow",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1025412100
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
             "name": "I navigate to the login page",
             "match": {
-              "location": "bdd\\steps\\empmanagement.steps.ts:10"
+              "location": "bdd\\steps\\login-simple.steps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 7889933899
+              "duration": 6949061900
             }
           },
           {
@@ -28,11 +36,11 @@
             "line": 10,
             "name": "I login with valid credentials \"testadmin\" and \"Vibetestq@123#\"",
             "match": {
-              "location": "bdd\\steps\\empmanagement.steps.ts:19"
+              "location": "bdd\\steps\\login-simple.steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 3303692900
+              "duration": 3665497199
             }
           },
           {
@@ -41,11 +49,11 @@
             "line": 11,
             "name": "I should be redirected to the dashboard page",
             "match": {
-              "location": "bdd\\steps\\empmanagement.steps.ts:32"
+              "location": "bdd\\steps\\login-simple.steps.ts:62"
             },
             "result": {
               "status": "passed",
-              "duration": 899002699
+              "duration": 902343200
             }
           },
           {
@@ -54,11 +62,11 @@
             "line": 12,
             "name": "I click on the PIM module",
             "match": {
-              "location": "bdd\\steps\\empmanagement.steps.ts:37"
+              "location": "bdd\\steps\\login-simple.steps.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 2053429400
+              "duration": 2442031699
             }
           },
           {
@@ -67,11 +75,11 @@
             "line": 13,
             "name": "I should see the PIM module",
             "match": {
-              "location": "bdd\\steps\\empmanagement.steps.ts:42"
+              "location": "bdd\\steps\\login-simple.steps.ts:33"
             },
             "result": {
               "status": "passed",
-              "duration": 895706300
+              "duration": 863414999
             }
           },
           {
@@ -80,11 +88,11 @@
             "line": 14,
             "name": "I click on add button",
             "match": {
-              "location": "bdd\\steps\\empmanagement.steps.ts:47"
+              "location": "bdd\\steps\\login-simple.steps.ts:37"
             },
             "result": {
               "status": "passed",
-              "duration": 1304025000
+              "duration": 990899900
             }
           },
           {
@@ -93,11 +101,11 @@
             "line": 15,
             "name": "I should see the add employee form",
             "match": {
-              "location": "bdd\\steps\\empmanagement.steps.ts:51"
+              "location": "bdd\\steps\\login-simple.steps.ts:41"
             },
             "result": {
               "status": "passed",
-              "duration": 861502499
+              "duration": 873704200
             }
           },
           {
@@ -106,11 +114,11 @@
             "line": 16,
             "name": "I add a new employee with unique details",
             "match": {
-              "location": "bdd\\steps\\empmanagement.steps.ts:55"
+              "location": "bdd\\steps\\login-simple.steps.ts:45"
             },
             "result": {
               "status": "passed",
-              "duration": 1106367200
+              "duration": 5182576799
             }
           },
           {
@@ -119,11 +127,11 @@
             "line": 17,
             "name": "I should see the Personal Details page for the new employee",
             "match": {
-              "location": "bdd\\steps\\empmanagement.steps.ts:63"
+              "location": "bdd\\steps\\login-simple.steps.ts:58"
             },
             "result": {
               "status": "passed",
-              "duration": 6121407199
+              "duration": 6049878700
             }
           },
           {
@@ -131,7 +139,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 503044500
+              "duration": 31656100
             }
           }
         ],

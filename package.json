@@ -7,12 +7,24 @@
     "test": "npx playwright test",
     "allure:generate": "npx allure generate allure-results --clean -o allure-report",
     "allure:open": "npx allure open allure-report",
-    "allure:report": "npm run allure:generate && npm run allure:open"
+    "allure:report": "npm run allure:generate && npm run allure:open",
+    "cucumber": "npx cucumber-js --require-module ts-node/register --require bdd/steps/**/*.steps.ts bdd/features/**/*.feature"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "dependencies": {
+    "@cucumber/pretty-formatter": "^4.0.0",
+    "@faker-js/faker": "^10.4.0",
+    "@ngneat/falso": "^8.0.2",
+    "@playwright/test": "^1.60.0",
+    "allure-commandline": "^2.42.0",
+    "allure-playwright": "^3.9.0",
+    "dotenv": "^17.4.2",
+    "mysql2": "^3.22.4",
+    "xlsx": "^0.18.5"
+  },
   "devDependencies": {
     "@cucumber/cucumber": "^13.0.0",
     "@playwright/test": "^1.61.0",

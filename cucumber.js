@@ -1,19 +1,29 @@
+const { setDefaultTimeout } = require("@cucumber/cucumber");
+
 module.exports = {
   default: {
     paths: ['bdd/Features/**/*.feature'],
-    require: [ 'bdd/steps/empmanagement.steps.ts',
-    //   'bdd/support/simpleWorld.ts',
-    //   'bdd/support/hooks.ts',
-    //   'bdd/steps/**/*.steps.ts',
+    require: [ 
+      // 'bdd/steps/**/*.steps.ts',
+      'bdd/support/simpleWorld.ts',
+      'bdd/support/hooks.ts',
+      'bdd/steps/**/*.steps.ts',
     ],
     requireModule: ['ts-node/register'],
+
+     // World parameters
+    worldParameters: {
+      // Add any world configuration here
+    },
     format: [
-    //   'pretty',
+      'pretty',
       'html:cucumber-report.html',
       'json:cucumber-report.json',
+      // '@cucumber/pretty-formatter'
     ],
     retry: 0,
     timeout: 120000,
+    // setDefaultTimeout:120000
   }
 };
 
