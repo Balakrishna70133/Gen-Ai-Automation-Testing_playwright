@@ -1,0 +1,10 @@
+Navigated to URL https://vibetestq-osondemand.orangehrm.com/auth/login
+Entered username testadmin
+Entered password Vibetestq@123#
+Clicked on Login Button
+Dashboard Page is displayed
+Clicked on PIM Link
+Entered First Name ben
+Entered Last Name Ducket
+Clicked on Save Button
+Personal Details Page is displayed
