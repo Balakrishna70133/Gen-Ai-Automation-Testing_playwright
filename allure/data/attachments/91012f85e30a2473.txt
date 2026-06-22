@@ -1,0 +1,20 @@
+Navigated to URL /
+Entered username testadmin
+Entered password Vibetestq@123#
+Clicked on Login Button
+Dashboard Page is displayed
+Clicked on PIM Link
+Entered First Name Test1
+Entered Last Name Employee
+Clicked on Save Button
+Personal Details Page is displayed
+Clicked on PIM Link
+Entered First Name Test2
+Entered Last Name Employee2
+Clicked on Save Button
+Personal Details Page is displayed
+Clicked on PIM Link
+Entered First Name Test3
+Entered Last Name Employee3
+Clicked on Save Button
+Personal Details Page is displayed
