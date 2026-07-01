@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
-import fs from 'fs';
+import * as fs from 'fs';
+import * as path from 'path';
 // test is used define tests
 // expect is used create assertions
 
@@ -30,28 +31,24 @@ test('Create employee with file upload ', async ({ page }) => {
 
     // await page.waitForTimeout(10000);
     await page.click("//button[normalize-space()='Add']");
-    await page.locator("input.oxd-file-input").setInputFiles("testdata/sampleData.txt");
+    const uploadFile = path.resolve(__dirname, '../testdata/sampleData.txt');
+    await page.locator("input.oxd-file-input").setInputFiles(uploadFile);
 
     await page.click("div.orangehrm-attachment button[type='submit']");
 
     await page.waitForTimeout(5000);
 
-    let dp = page.waitForEvent('download');
+    const downloadDir = path.resolve(__dirname, '../downloads');
+    fs.mkdirSync(downloadDir, { recursive: true });
+
+    const dp = page.waitForEvent('download');
 
     await page.click("i.bi-download");
-    let download = await dp;
-    await download.saveAs('downloads/' + download.suggestedFilename());
+    const download = await dp;
+    await download.saveAs(path.join(downloadDir, download.suggestedFilename()));
 
     //verify file exist
-    fs.exists('downloads/' + download.suggestedFilename(), (err, exists) => {
-        if (err) {
-            console.error('Error checking file existence:', err);
-            return;
-        }
-        if (exists) {
-            console.log('File exists:', download.suggestedFilename());
-        } else {
-            console.log('File does not exist:', download.suggestedFilename());
-        }
-    });
+    fs.existsSync(path.join(downloadDir, download.suggestedFilename()))
+        ? console.log('File exists:', download.suggestedFilename())
+        : console.log('File does not exist:', download.suggestedFilename());
 })
