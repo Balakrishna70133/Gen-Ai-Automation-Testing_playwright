@@ -18,7 +18,7 @@
     "@cucumber/pretty-formatter": "^4.0.0",
     "@faker-js/faker": "^10.4.0",
     "@ngneat/falso": "^8.0.2",
-    "allure": "^3.13.1",
+    "allure-playwright": "^3.13.1",
     "allure-commandline": "^2.42.0",
     "dotenv": "^17.4.2",
     "mysql2": "^3.22.4",

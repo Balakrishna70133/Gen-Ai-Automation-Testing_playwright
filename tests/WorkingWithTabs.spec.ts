@@ -18,7 +18,9 @@ test('Verify Tabs',async({page})=>{
 
     //get title of all pages    for(let i=0;i<allPages.length;i++){
     for(let i=0;i<allPages.length;i++){
-        let title = await allPages[i].title();
+        const pageAtIndex = allPages[i];
+        if (!pageAtIndex) continue;
+        let title = await pageAtIndex.title();
         console.log("Title of page " + i + " is " + title);
     }
 

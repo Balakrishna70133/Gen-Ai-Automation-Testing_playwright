@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import fs from  "fs";
+import fs from 'fs';
 // test is used define tests
 // expect is used create assertions
 
@@ -19,8 +19,8 @@ test('Create employee with file upload ', async ({ page }) => {
 
     await page.locator("//a[normalize-space()='PIM']").click();
     await page.locator("//button[normalize-space()='Add']").click();
-    await page.locator("//input[@placeholder='First Name']").fill("T.v");
-    await page.locator("//input[@placeholder='Last Name']").fill("Sridhar");
+    await page.locator("//input[@placeholder='First Name']").fill("Test");
+    await page.locator("//input[@placeholder='Last Name']").fill("Employee");
 
     let empid = await page.locator("//label[text()='Employee Id']/../..//input").inputValue();
     console.log("Employee Id is " + empid);
@@ -30,7 +30,7 @@ test('Create employee with file upload ', async ({ page }) => {
 
     // await page.waitForTimeout(10000);
     await page.click("//button[normalize-space()='Add']");
-    await page.locator("input.oxd-file-input").setInputFiles("tests/sampledatafile.txt");
+    await page.locator("input.oxd-file-input").setInputFiles("testdata/sampleData.txt");
 
     await page.click("div.orangehrm-attachment button[type='submit']");
 
