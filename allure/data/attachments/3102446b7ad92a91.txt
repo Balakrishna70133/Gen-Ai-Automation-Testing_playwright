@@ -1,0 +1,4 @@
+Navigated to URL /
+Entered username Admin
+Entered password admin123
+Clicked on Login Button
