@@ -1,0 +1,4 @@
+Clicked on PIM Link
+Entered First Name John
+Entered Last Name Smith
+Clicked on Save Button
