@@ -8,7 +8,8 @@
     "allure:generate": "npx allure generate allure-results --clean -o allure-report",
     "allure:open": "npx allure open allure-report",
     "allure:report": "npm run allure:generate && npm run allure:open",
-    "cucumber": "npx cucumber-js --require-module ts-node/register --require bdd/steps/**/*.steps.ts bdd/features/**/*.feature"
+    "cucumber": "npx cucumber-js --config cucumber.js",
+    "cucumber:allure": "npm run cucumber && npm run allure:generate && npm run allure:open"
   },
   "keywords": [],
   "author": "",
@@ -18,17 +19,19 @@
     "@cucumber/pretty-formatter": "^4.0.0",
     "@faker-js/faker": "^10.4.0",
     "@ngneat/falso": "^8.0.2",
-    "allure-playwright": "^3.13.1",
     "allure-commandline": "^2.42.0",
+    "allure-playwright": "^3.13.1",
     "dotenv": "^17.4.2",
     "mysql2": "^3.22.4",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^13.0.0",
+    "@cucumber/messages": "^34.0.2",
     "@playwright/test": "^1.61.1",
     "@types/node": "^25.9.3",
     "allure-commandline": "^2.42.1",
+    "allure-cucumberjs": "^3.10.2",
     "allure-playwright": "^3.10.1",
     "playwright": "^1.60.0",
     "ts-node": "^10.9.2",

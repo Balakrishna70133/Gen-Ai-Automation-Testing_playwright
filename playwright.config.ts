@@ -82,10 +82,18 @@ outputDir: `${runOutputDir}/artifacts`,
 
       // grep: "@ind", // to run tests with @ind tag
       // testMatch: 'POMTestSerialMode.spec.ts', 
-      testMatch: ['*POMTestSerialMode.spec.ts', '*Apsrtc.spec.ts']
+     // testMatch: ['*POMTestSerialMode.spec.ts', '*Apsrtc.spec.ts', '*CreateDelete.spec.ts' ],
       // testMatch:'CreateDelete.spec.ts'
  } ],
 });
+
+
+
+
+
+
+
+
 
 
 

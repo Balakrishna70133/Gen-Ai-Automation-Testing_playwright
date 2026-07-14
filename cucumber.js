@@ -19,8 +19,14 @@ module.exports = {
       'pretty',
       'html:cucumber-report.html',
       'json:cucumber-report.json',
+      "allure-cucumberjs/reporter",
+      
       // '@cucumber/pretty-formatter'
     ],
+
+      formatOptions: {
+    resultsDir: "allure-results",
+  },
     retry: 0,
     timeout: 120000,
     // setDefaultTimeout:120000

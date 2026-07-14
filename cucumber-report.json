@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 614419899
+              "duration": 745384100
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3654028800
+              "duration": 5581674600
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 999172399
+              "duration": 3802459999
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2792703899
+              "duration": 924257800
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1949305699
+              "duration": 2281930600
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 861530300
+              "duration": 870923999
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 834582199
+              "duration": 1063532200
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 860129199
+              "duration": 882359000
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5089610499
+              "duration": 5142537299
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6054246999
+              "duration": 6000560300
             }
           },
           {
@@ -139,7 +139,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 18834899
+              "duration": 32045200
             }
           }
         ],
